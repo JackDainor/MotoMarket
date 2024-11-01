@@ -1,0 +1,295 @@
+body{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.carrito{
+    left: 94%;
+    top: 87%;
+    width: 5%;
+    height: 10%;
+    position: fixed;
+}
+
+.carrito:hover{        
+    transform: scale(0.9);  
+}
+
+
+.portada{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    top: 1%;
+    animation-name: intro-portada;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+}
+
+@keyframes intro-portada{
+    0%{transform: scale(120%);
+    opacity: 0%;}
+    
+    100%{transform: scale(100%);
+    opacity: 100%;}
+}
+
+header{
+    background-color: black;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: white;
+    padding: 1%;
+    text-align: center;
+    z-index: 3;
+    position: relative;
+}
+
+
+.titulo{
+    display: flex;
+    justify-content: space-around;
+    font-size: 100%;
+    margin: 0;
+}
+
+.nosotros{
+    color: white;
+    text-decoration: none;
+}
+
+.nosotros:hover{
+    color: lightseagreen;
+    transform: scale(1.4);
+}
+
+.servicios{
+    color: white;
+    text-decoration: none;
+}
+
+.servicios:hover{
+    color: lightseagreen;
+    transform: scale(1.4);
+}
+
+.nosotros:hover{
+    color: lightseagreen;
+    transform: scale(1.4);
+}
+
+.home{
+    color: white;
+    text-decoration: none;
+}
+
+.home:hover{
+    color: lightseagreen;
+    transform: scale(1.4);
+}
+
+/* BARRA ROJA */
+
+.menu {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  padding: 1% 0;
+  position: sticky;
+  top: 0;
+  margin-left: 15%;
+  margin-right: 15%;
+  height: 3%;
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+  animation-name: menuintro;
+  animation-duration: 1000ms;
+  z-index: 2;
+}
+
+@keyframes menuintro{
+  0%{position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-left: 13%;
+    margin-top: 0%;
+    opacity: 0;
+    padding: 1% 0%;
+    width: 75%;
+  }
+  100%{position: absolute;
+    display: flex;
+    justify-content: center; 
+    margin-left: 13%;
+    margin-top: 3.5%;
+    opacity: 100%;
+    padding: 1% 0%;
+    width: 75%;
+  }
+}
+
+
+nav{
+   position: relative;
+   z-index: 1;
+   width: 80%;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0.5% 1%;
+    font-weight: bold;
+    font-size: 90%;
+    text-transform: uppercase;
+    transform: scale(0.9);
+    
+}
+
+nav a:hover{
+    font-size: 100%;
+}
+
+article{
+    font-size: 130%;
+    margin-right: 5%;
+    margin-top: 10%;
+    height: auto;
+    width: auto;
+    border-radius: 15%;
+    padding: 3%;
+    backdrop-filter: blur(10px);
+    color: white;
+    font-family:"Comic Sans MS", cursive;
+    text-align: center;
+    z-index: -1;
+    position: absolute;
+    animation-name: mover-texto;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+}
+
+
+@keyframes mover-texto{
+    0%{transform: translateX(-300%);
+    opacity: 0%}
+    100%{transform: translateX(-100%);
+    opacity: 100%}
+}
+
+
+.parrafo{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 30%;
+    padding-top: 3%;
+    padding-left: 10%;
+}
+
+
+
+.fondo2{
+    background-color: white;
+    padding: 0;
+}
+ 
+.titulo2{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 35px;
+    font-family: monospace;
+}
+
+.fondo-contenedor{
+    background-color: bisque;
+}
+
+.contenedor{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.contenedor img{
+    margin-left: 18%;
+}
+
+.item{
+    background-color: white;
+    width: 300px;
+    height: 350px;
+}
+
+.item h3{
+    margin-top: 20%;
+    text-align: center;
+}
+
+.item h5{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+
+  
+/* PIE DE PAGINA  */
+
+footer{
+    background-color:#222;
+    height: 300px;
+}
+
+.mainmenu{
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.titulo-piepag{
+    color: white;
+    font-size: 50px;
+    margin: 0 0 10px 0;
+}
+
+.contact{
+    margin: 10px 0 10px 0;
+    color: white;
+    font-size: 30px;
+}
+
+.cont-item{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+.correo-item{
+    margin: 0 40px 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.telefono-item{
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.copy{
+    font-size: 16px;
+    text-align: center;
+    color: white;
+}
